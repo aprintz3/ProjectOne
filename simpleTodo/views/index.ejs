@@ -32,7 +32,7 @@
   
   
       <div ng-repeat="post in posts | orderBy:'-upvotes'">
-        <span class="glyphicon glyphicon-thumbs-up"
+        <span class="glyphicon glyphicon-ok-sign"
           ng-click="incrementUpvotes(post)"></span>
         {{post.upvotes}}
         <span style="font-size:20px; margin-left:10px;">
@@ -47,7 +47,7 @@
 
       <form ng-submit="addPost()"
         style="margin-top:30px;">
-        <h3>Add a new post</h3>
+        <h3>Add a new ToDo</h3>
 
         <div class="form-group">
           <input type="text"
